@@ -45,9 +45,10 @@ class QuoteTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath)
 
-         Configure the cell...
+        cell.textLabel?.text = quotesToShow[indexPath.row]
+         
 
         return cell
     }
