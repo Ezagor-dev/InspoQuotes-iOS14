@@ -40,7 +40,7 @@ class QuoteTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return quotesToShow.count
+        return quotesToShow.count + 1
     }
 
     
